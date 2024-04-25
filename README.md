@@ -17,3 +17,27 @@ Also give a theoretical argument for why X could or could not be correct, based
 on the complexity of the general sorting problem we covered in class.
 
 Add your answers to this markdown file.
+
+**MY ANSWER:**
+
+Obviously, the algorithms mergesort, quicksort, insertion sort, and heapsort are comparison-based - but we have not found such an algorithm with $O(n)$ time.
+
+We must set straight the fact that we cannot assume anything - the comparisons we make are all we know about the data set.
+
+So someone claiming such a thing as this $O(n)$ algorithm would be revolutionary...
+
+I'm not sold it's possible. How could it be? The decision tree model shows - there is no way that we could successfully sort the data set in faster than $O(nlogn)$ time without making additional assumptions.
+
+But let's talk about how we might go about verifying this claim anyways (more like disprove it).
+
+Obviously, we would need to test the algorithm using diverse data sets - data sets with varying levels of size and varying levels of already-sortedness, including totally sorted, reverse-sorted, random, etc.
+
+We would definitely want to see how the algorithm performs with exceedingly large data sets.
+
+We would also want to see whether the algorithm is consistent throughout multiple runs of the same input.
+
+We would want to observe the space complexity of the algorithm as well, if we can.
+
+And we would need to compare the algorithm to the others and see for ourselves that it gives a better runtime than the other algorithms for every input.
+
+Ultimately, however, the decision tree has proved for us that it is impossible for us to sort solely using comparison faster than $O(nlogn)$ time. There's not a whole lot to it - unless some metaphorically 4th-dimensional idea comes into play, we cannot acheive better runtime.
