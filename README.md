@@ -34,10 +34,8 @@ Obviously, we would need to test the algorithm using diverse data sets - data se
 
 We would definitely want to see how the algorithm performs with exceedingly large data sets.
 
-We would also want to see whether the algorithm is consistent throughout multiple runs of the same input.
+In these tests, we would expect to see faster runtimes than the other algorithms for every input. But not only that, we would also expect to see the runtime linearly increase with the input size, since that is what's being claimed here.
 
-We would want to observe the space complexity of the algorithm as well, if we can.
+We would also want to see whether the algorithm is consistent throughout multiple runs of the same input. And would want to observe the space complexity of the algorithm as well, if we can.
 
-And we would need to compare the algorithm to the others and see for ourselves that it gives a better runtime than the other algorithms for every input.
-
-Ultimately, however, the decision tree has proved for us that it is impossible for us to sort solely using comparison faster than $O(nlogn)$ time. There's not a whole lot to it - unless some metaphorically 4th-dimensional idea comes into play, we cannot acheive better runtime.
+Ultimately, however, the decision tree has proved for us that it is impossible for us to sort solely using comparison faster than $O(nlogn)$ time. It is worth noting, however, that $O(nlogn)$ is our theoretical lower bound for the worst-case time complexity. So in theory, to find a better algorithm, we would need to prove that the worst case runtime is better than $O(nlogn)$ . Once again, however, our decision tree is blatant proof that this is impossible. There's not a whole lot to it - unless some metaphorically 4th-dimensional idea comes into play, we cannot acheive better runtime.
