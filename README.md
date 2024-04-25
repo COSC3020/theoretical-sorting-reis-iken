@@ -34,7 +34,7 @@ Obviously, we would need to test the algorithm using diverse data sets - data se
 
 We would definitely want to see how the algorithm performs with exceedingly large data sets.
 
-In these tests, we would expect to see faster runtimes than the other algorithms for every input. But not only that, we would also expect to see the runtime linearly increase with the input size, since that is what's being claimed here.
+In these tests, we would expect to see the runtime linearly increase with the input size, since that is what's being claimed here.
 
 We would also want to see whether the algorithm is consistent throughout multiple runs of the same input. And would want to observe the space complexity of the algorithm as well, if we can.
 
